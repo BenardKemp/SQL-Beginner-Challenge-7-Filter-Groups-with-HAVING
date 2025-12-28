@@ -5,7 +5,7 @@ def filter_groups_with_having():
     conn = sqlite3.connect("example.db")
     cursor = conn.cursor()
 
-    # SQL query for Challenge #1
+    # SQL query for Challenge #7
     query = "SELECT category, COUNT(*) AS total_products FROM products GROUP BY category HAVING COUNT(*) >= 2"
 
     cursor.execute(query)
